@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # Descripción
 
 Este proyecto consta en mostrar las coordenas de la ubicacción actual en consola.
-Para ello hay un service con el nomble Geolocation que contiene un metodo llamado getLocation que como resultado nos devuelve un objeto
+Para ello hay un service con el nombre Geolocation que contiene un metodo llamado getLocation que como resultado nos devuelve un objeto
 con los datos de la ubicación actual.
 
 Para ver el resulatdo obtenido, se debe de abrir la consola del navegador.

@@ -10,6 +10,8 @@ con los datos de la ubicación actual.
 
 Para ver el resulatdo obtenido, se debe de abrir la consola del navegador.
 
+Ademas el metodo del service se hace uso de las promesas.
+
 
 ## Development server
 

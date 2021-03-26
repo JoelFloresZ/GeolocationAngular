@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GeolocationService } from './servers/geolocation.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'geolocalizacion';
+
+  constructor(private coords:GeolocationService){
+
+  }
+
+  ngOnInit(): void {
+    /*
+    * Ejecutamos el metodo getGeolocation del service geolocation
+    * para obtener las coordenas de la ubicacion actual
+    */
+    this.coords.getGeolocation().then(pos => {
+      console.log('Latitude: ', pos.latitude, "Longitude: ", pos.longitude);
+  });
+   
+  }
+
 }
